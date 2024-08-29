@@ -16,5 +16,11 @@ pipeline {
                 sh 'mvn test' // Run tests separately
             }
         }
+        stage('Complete'){
+            steps{
+                echo 'Job completed'
+                echo 'Build and test successful'
+            }
+        }
     }
 }
